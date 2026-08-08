@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Realtime Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OpenAI Realtime Prototype</h1>
+        
+        <div class="status-panel">
+            <p>Status: <span id="main-status">Disconnected</span></p>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start Conversation</button>
+            <button id="stop-btn" disabled>Stop Conversation</button>
+        </div>
+
+        <div class="details-panel">
+            <p>Microphone: <span id="mic-status">Ready</span></p>
+            <p>AI: <span id="ai-status">Ready</span></p>
+            <p>Session: <span id="session-status">Stopped</span></p>
+        </div>
+
+        <div class="debug-panel">
+            <h3>Debug Log</h3>
+            <div id="debug-log"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
